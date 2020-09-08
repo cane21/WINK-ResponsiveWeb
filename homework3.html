@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HW3</title>
+
+    <style>
+        body
+        {
+            background:#1b1d21;
+        }
+
+        .card
+        {
+            width:300px;
+            height:340px;
+            background-color:#2C3035;
+            box-shadow: 0px 0px 30px rgba(0,0,0,.5);
+            border-radius:5px;
+            position:relative;
+        }
+
+        .card .thumbnail
+        {
+            height:145px;
+            width:100%;
+        }
+
+        .card .card_content
+        {
+            padding:15px;
+            color:#89898B;
+        }
+
+        .card .card_content h2
+        {
+            color:#B6B7B8;
+            margin:0;
+        }
+
+        .card .card_content p
+        {
+            margin:0;
+        }
+
+        .card .card_content small
+        {
+            display:block;
+            margin-top:25px;
+        }
+
+        .card .card_footer
+        {
+            display:flex;
+            justify-content: space-between;
+            border-top : 1px solid #89898B;
+            margin-top:20px;
+            color:#B6B7B8;
+            font-size:14px;
+        }
+
+        .card .card_footer img
+        {
+            width:20px;
+            height:20px;
+            margin : 10px 0px 0px 10px;
+        }
+
+        .card .card_footer .footer_right
+        {
+            margin-right:5px;
+        }
+
+        .notice
+        {
+            width:300px;
+        }
+
+        .notice .notice_top
+        {
+            color: #E5E6E7;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .notice .notice_top .notice_count
+        {
+            width:25px;
+            height:25px;
+            background:#2C3035;
+            color:#89898B;
+            text-align:center;
+            border-radius:15px;
+            font-weight: bold;
+        }
+
+        .notice .notice_content .item
+        {
+            display : flex;
+            background:#2C3035;
+            border-radius:5px;
+            box-shadow: 0px 0px 30px rgba(0,0,0,.5);
+            align-items: center;
+            margin-bottom:10px;
+            height: 75px;
+            position:relative;
+        }
+
+        .notice .notice_content .item img
+        {
+            width: 48px;
+            height: 48px;
+            margin : 0px 20px 0px 20px;
+        }
+
+        .notice .notice_content .item .icon_notice
+        {
+            width:10px;
+            height:10px;
+            border-width: 3px;
+            border-color:#2C3035;
+            border-style: solid;
+            border-radius: 10px;
+            background: #d92626;
+            position:absolute;
+            left:15px;
+            top:7px;
+        }
+
+        .notice .notice_content .item .item_content *
+        {
+            color: #E5E6E7;
+            margin:0;
+        }
+
+        .notice .notice_content .item .item_content h1
+        {
+            font-size : 15px;
+        }
+
+        .notice .notice_content .item .item_content h2
+        {
+            font-size : 12px;
+        }
+
+        .notice .notice_content .item .item_content small
+        {
+            color:#89898B;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="card">
+    <img src="images/thumbnail.jpg" alt="thumbnail" class="thumbnail">
+
+    <div class="card_content">
+        <h2>
+            아이유
+        </h2>
+        <p>
+            Palette
+        </p>
+        <small>
+            (Feat. G-DRAGON)
+        </small>
+    </div>
+
+    <div class="card_footer">
+        <div class="footer_left">
+            <img src="images/footer_left1.png" alt="footer_left1">
+            애니
+        </div>
+        <div class="footer_right">
+            <img src="images/footer_right1.svg" alt="footer_right1">
+            <img src="images/footer_right2.svg" alt="footer_right2">
+        </div>
+    </div>
+</div>
+
+<div class="notice">
+    <div class="notice_top">
+        <h2>😉 챔피언 소개 </h2>
+        <div class="notice_count">3</div>
+    </div>
+
+    <div class="notice_content">
+        <div class="item">
+            <div class="icon_notice"></div>
+            <img src="images/notice_item1.png" class="icon" alt="notice_item1">
+            <div class="item_content">
+                <h1>그레이브즈</h1>
+                <h2>정글</h2>
+                <small>총든 마이</small>
+            </div>
+        </div>
+        <div class="item">
+            <div class="icon_notice"></div>
+            <img src="images/notice_item2.png" class="icon" alt="notice_item2">
+            <div class="item_content">
+                <h1>트린다미어</h1>
+                <h2>탑</h2>
+                <small>물리 카사딘</small>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/notice_item3.png" class="icon" alt="notice_item3">
+            <div class="item_content">
+                <h1>릴리아</h1>
+                <h2>탑, 정글</h2>
+                <small>노루</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
